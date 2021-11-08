@@ -55,7 +55,7 @@ ul li {
 
 
 .header {
-    background-color: rgb(12, 73, 35);
+    background-color: #af1717;
     height: 177px;
     font-size: 0.8em;
     margin-left: 0px;
@@ -88,7 +88,7 @@ ul li {
 .logo_text h2 {
     font-size: 0.9em;
     padding: 4px 0 0 0;
-    color: #999;
+    color: rgb(255, 255, 255);
 }
 
 .menubar {
@@ -319,20 +319,69 @@ hr {
     width: 25%;
 }
 
+/* При наведении на кнопку она меняется */
 .button {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #8f8f8f;
+    border-radius: 0.6em;
+    color: #8f8f8f;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; 
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 2%;
+    float: right;
+    margin-top: 5%;
+}
+
+.button:hover {
+  box-shadow: 0 0 40px 40px #8f8f8f inset;
+}
+
+.button:hover, .button:focus {
+    color: #fff;
+    outline: 0;
+  }
+  
+  .button {
+      -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.button a {
+    color: #8B00FF;
+    font-weight: bold;
+}
+
+/* .button {
     background-color: #7268ad;
     padding: 2%;
     color: white;
     border-radius: 5px;
     float: right;
     margin-top: 5%;
-    clear: both;
+    clear: both; 
     font-size: 0.8em;
-}
+} */
 
-.button a {
-    color: white;
-}
 
 
 table {
